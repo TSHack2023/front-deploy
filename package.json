@@ -26,13 +26,14 @@
   "scripts": {
     "start": "WATCHPACK_POLLING=true react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "cp src/404.html build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "rm": "rm -rf docs",
     "mv": "mv build docs",
     "git": "git add . && git commit -m 'build' && git push origin master",
-    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
+    "deploy": "npm run rm && npm run build && npm run mv && npm run postbuild && npm run git"
   },
   "eslintConfig": {
     "extends": [
