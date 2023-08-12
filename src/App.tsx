@@ -11,7 +11,6 @@ import Review from "./pages/Review";
 const App = (): JSX.Element => {
   const id = sessionStorage.getItem("id");
   const homeURL = process.env.PUBLIC_URL ?? "";
-  console.log(homeURL);
 
   if (id !== null) {
     return (
