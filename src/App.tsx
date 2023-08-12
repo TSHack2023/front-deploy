@@ -13,7 +13,7 @@ const App = (): JSX.Element => {
 
   if (id !== null) {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/Signin">
             <Redirect to="/Home" />
