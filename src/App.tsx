@@ -41,7 +41,7 @@ const App = (): JSX.Element => {
           <Route path={homeURL + "/"}>
             <Redirect to={homeURL + "/Home"} />
           </Route>
-          <Route path={homeURL + "*"}>
+          <Route path={"*"}>
             <Redirect to={homeURL + "/Home"} />
           </Route>
         </Switch>
@@ -75,7 +75,7 @@ const App = (): JSX.Element => {
           <Route path={homeURL + "/"}>
             <Redirect to={homeURL + "/Signin"} />
           </Route>
-          <Route path={homeURL + "*"}>
+          <Route path={"*"}>
             <Redirect to={homeURL + "/Signin"} />
           </Route>
         </Switch>
